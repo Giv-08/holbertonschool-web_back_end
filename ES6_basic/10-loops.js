@@ -1,12 +1,9 @@
 function appendToEachArrayValue(array, appendString) {
-  for (const [index, value] of array.entries()) {
+  arr = []
+  index = 0
+  for (let index of array) {
     array[index] = appendString + value;
+    index = index + 1;
   }
   return array;
 }
-// function appendToEachArrayValue(array, appendString) {
-//   for (let i in array) {
-//     array[i] = appendString + array[i];
-//   }
-//   return array;
-// }
