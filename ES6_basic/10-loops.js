@@ -7,5 +7,5 @@ export default function appendToEachArrayValue(array, appendString) {
     index += 1;
   }
 
-  return newArrr;
+  return newArr;
 }
