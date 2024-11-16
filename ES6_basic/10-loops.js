@@ -8,5 +8,5 @@ export default function appendToEachArrayValue(array, appendString) {
     index += 1;
     // console.log(new_arr)
   }
-  return new_arr;
+  return newArrr;
 }
