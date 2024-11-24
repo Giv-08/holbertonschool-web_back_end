@@ -1,7 +1,7 @@
 export default function getLstStudents(arr) {
   if (!Array.isArray(arr)) {
-    return []
+    return [];
   }
-  const ids = arr.map(obj => obj.id)
-  return ids // new array
+  const ids = arr.map((obj) => obj.id)
+  return ids; // new array
 }
