@@ -15,13 +15,11 @@
 //   }
 // }
 
-function getLstStudents(id, first_name, location) {
-  const dict = {
-    'id': id,
-    'first_name': first_name,
-    'location': location
-  }
-  let array = []
-  array.push(dict)
+export default function getLstStudents() {
+  let array = [
+    { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
+    { id: 2, firstName: 'James', location: 'Columbia' },
+    { id: 5, firstName: 'Serena', location: 'San Francisco' }
+  ]
   return array
 }
