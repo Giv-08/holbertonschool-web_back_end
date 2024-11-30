@@ -1,14 +1,11 @@
 export default function groceriesList() {
-  const obj = {
-    Apples: 10,
-    Tomatoes: 10,
-    Pasta: 1,
-    Rice: 1,
-    Banana: 5
-  };
+  let newMap = new Map();
 
-  const modifiedObj = JSON.stringify(obj, null, 2)
-    .replace(/": /g, '" => ');
+  newMap.set('Apples', 10);
+  newMap.set('Tomatoes', 10);
+  newMap.set('Pasta', 1);
+  newMap.set('Rice', 1);
+  newMap.set('Banana', 5);
 
-  return modifiedObj;
+  return newMap;
 }
