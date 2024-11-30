@@ -12,10 +12,10 @@
 //   return modifiedArray.join('-');
 //   }
 // }
-export default function cleanSet(set, startString) {
+export default function cleanSet(set, startString="") {
   let modifiedArray = [];
 
-  if (startString === "") {
+  if (!startString) {
     return "";
   }
 
