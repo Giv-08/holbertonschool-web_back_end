@@ -1,7 +1,7 @@
 export default function cleanSet(set, startString="") {
   let modifiedArray = [];
 
-  if (!startString || typeof(startString !== "string")) {
+  if (!startString || typeof startString !== "string") {
     return "";
   }
 
