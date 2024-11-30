@@ -1,21 +1,7 @@
-// export default function cleanSet(set, startString){
-//   let modifiedArray = [];
-
-//   for (const value of set) {
-//     if (value.startsWith(startString)) {
-//       // let newValue = value.slice(startString.length);
-//       modifiedArray.push(value.slice(startString.length));
-//       // modifiedArray.join('-');
-//     } else {
-//       return modifiedArray;
-//     }
-//   return modifiedArray.join('-');
-//   }
-// }
 export default function cleanSet(set, startString="") {
   let modifiedArray = [];
 
-  if (!startString) {
+  if (!startString || typeof(startString !== "string")) {
     return "";
   }
 
