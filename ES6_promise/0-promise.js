@@ -1,3 +1,3 @@
 export default async function getResponseFromAPI() {
-  return "API response";
+  return 'API response';
 }
