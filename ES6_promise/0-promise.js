@@ -1,5 +1,3 @@
-export default function getResponseFromAPI() {
-  return new Promise((resolve) => {
-    resolve("fetched data successfully")
-  });
+export default async function getResponseFromAPI() {
+  return "API response";
 }
