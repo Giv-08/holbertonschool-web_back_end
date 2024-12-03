@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import math
 ''' this module takes a float n as argument and
 returns the floor of the float'''
+import math
 
 
 def floor(floor: float) -> int:
