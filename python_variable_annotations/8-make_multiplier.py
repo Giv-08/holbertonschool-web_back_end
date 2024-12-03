@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 ''' this module takes a float multiplier as
 argument and returns a function that multiplies a float by multiplier.'''
-from typing import Union, Tuple
+from typing import Callable
 
 
-def make_multiplier(multiplier: float):
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
     '''function that returns a function that multiplies a
     float by multiplier.
 
@@ -14,6 +14,6 @@ def make_multiplier(multiplier: float):
     Returns:
         function that multiplies a float by multiplier.
     '''
-    def second_multiplier(value: float):
+    def second_multiplier(value: float) -> float:
         return multiplier * value
     return second_multiplier
