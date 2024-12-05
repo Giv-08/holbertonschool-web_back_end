@@ -2,7 +2,7 @@
 ''' This module takes in an integer argument (max_delay)
 waits for a random delay seconds and eventually
 returns return the list of all the delays (float values).'''
-from 0-basic_async_syntax import wait_random
+wait_random = __import__('0-basic_async_syntax').wait_random
 from typing import List
 import asyncio
 
