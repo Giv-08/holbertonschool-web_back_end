@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-''' This module takes in an integer argument (max_delay) waits for a random delay
-seconds and eventually returns it.'''
+''' This module takes in an integer argument (max_delay)
+waits for a random delay seconds and eventually returns it.'''
 import random
 import asyncio
 
