@@ -2,12 +2,13 @@
 ''' This module takes in an integer argument (max_delay)
 waits for a random delay seconds and eventually
 returns return the list of all the delays (float values).'''
-wait_random = __import__('0-basic_async_syntax').wait_random
+
 from typing import List
 import asyncio
+wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int = 10) -> List[float]: # return a sorted list
+async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     ''' This asynce function defines a max_delay value and uses
     wait_random from previous file then collect all delays and add
     in the list'''
