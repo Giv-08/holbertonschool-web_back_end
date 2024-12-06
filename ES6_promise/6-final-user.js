@@ -7,14 +7,10 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
     return result_array.map((result) => {
       return {
         status: result.status,
-        value: result.status,
+        value: result.status === 'fulfilled' ? result.value : result.reason,
       }
     });
   } catch (error) {
     console.log(error);
-    return {
-      status: result.status,
-      reason: result.reason,
-    }
   }
 }
