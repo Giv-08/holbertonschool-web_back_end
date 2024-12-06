@@ -1,13 +1,16 @@
-export default function getFullResponseFromAPI(success) {
+export function handleResponseFromAPI(promise) {
   return new Promise((resolve, reject) => {
-    if (success) {
-      resolve({
-        status: 200,
-        body: 'Success',
+    promise
+      .then(() => {
+        console.log('Got a response from the API');
+        resolve({
+          status: 200,
+          body: 'Success',
+        });
+      })
+      .catch(() => {
+        console.log('Got a response from the API');
+        reject(Error());
       });
-      console.log('Got a response from the API')
-    } else {
-      reject(Error());
-    }
   });
 }
