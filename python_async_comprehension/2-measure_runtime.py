@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """ Module for async generator task 1"""
-import asyncio, time
+import asyncio
+import time
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
