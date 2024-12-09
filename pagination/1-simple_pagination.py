@@ -2,8 +2,8 @@
 """ Module to calculate the range of indexes
 for a specific page in pagination."""
 import csv
-import math
 from typing import List, Tuple
+
 
 def index_range(page: int, page_size: int) -> Tuple:
     """ This function calculates the start index and end index
@@ -12,6 +12,7 @@ def index_range(page: int, page_size: int) -> Tuple:
     start_idx = (page - 1) * page_size
     end_idx = page * page_size
     return (start_idx, end_idx)
+
 
 class Server:
     """Server class to paginate a database of popular baby names.
