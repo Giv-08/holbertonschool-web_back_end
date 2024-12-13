@@ -8,5 +8,5 @@ def update_topics(mongo_collection, name, topics):
     """changes all topics of if name of the documents matched"""
     mongo_collection.update_many(
         { "name": name },
-        { "$set": { "topic": topics } }
+        { "$set": { "topics": topics } }
     )
