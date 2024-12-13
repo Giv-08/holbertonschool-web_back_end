@@ -5,3 +5,11 @@ from pymongo import MongoClient
 
 
 def schools_by_topic(mongo_collection, topic):
+    my_list = []
+    schools = mongo_collection.find(
+        { "topics": topic }
+    )
+
+    for school in schools:
+        my_list.append(school)
+        return my_list
