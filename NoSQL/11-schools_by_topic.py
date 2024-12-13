@@ -5,6 +5,8 @@ from pymongo import MongoClient
 
 
 def schools_by_topic(mongo_collection, topic):
+    """ this function returns the list of school
+      having a specific topic """
     my_list = []
     schools = mongo_collection.find(
         { "topics": topic }
