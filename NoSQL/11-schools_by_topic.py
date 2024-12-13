@@ -12,6 +12,7 @@ def schools_by_topic(mongo_collection, topic):
         { "topics": topic }
     )
 
-    for school in schools:
-        my_list.append(school)
-        return my_list
+    if schools is not None:
+        for school in schools:
+            my_list.append(school)
+    return my_list
