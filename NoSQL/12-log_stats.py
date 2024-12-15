@@ -27,7 +27,7 @@ def print_nginx():
     print("Methods:")
 
     for method in methods:
-        print(f"method {method}: {method_stats[method]}")
+        print(f"\tmethod {method}: {method_stats[method]}")
 
     print(f"{count} status check")
 
