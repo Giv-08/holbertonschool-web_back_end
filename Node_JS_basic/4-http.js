@@ -1,5 +1,7 @@
-var app = require('http');
-app.createServer(function (req, res) {
+var http = require('http');
+var app = http.createServer(function (req, res) {
   res.write('Hello Holberton School!');
   res.end();
-}).listen(1245);
+});
+app.listen(1245);
+module.exports = app;
