@@ -1,13 +1,12 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 
 async function countStudents(filePath) {
     try {
-        const data = await fs.readFileSync(filePath, 'utf8');
+        const data = await fs.readFile(filePath, 'utf8');
         const lines = data.trim().split('\n');
         const studentsCS = [];
         const studentsSWE = [];
 
-        // Iterate through the lines and process student data
         lines.forEach((line) => {
             const [firstname, lastname, age, field] = line.split(',');
 
@@ -22,7 +21,7 @@ async function countStudents(filePath) {
         console.log(`Number of students in CS: ${studentsCS.length}. List: ${studentsCS.join(', ')}`);
         console.log(`Number of students in SWE: ${studentsSWE.length}. List: ${studentsSWE.join(', ')}`);
     } catch (error) {
-        throw new Error('Cannot load the database:');
+        throw new Error('Cannot load the database');
     }
 }
 
