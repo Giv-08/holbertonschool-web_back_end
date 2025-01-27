@@ -6,7 +6,7 @@ class StudentsController {
   static async getAllStudents(request, response) {
     try {
       const data = await readDatabase(databaseFilePath);
-      const text = 'This is the list of our students\n';
+      let text = 'This is the list of our students\n';
       // sort alphabetically
       const fields = Object.keys(data).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 
